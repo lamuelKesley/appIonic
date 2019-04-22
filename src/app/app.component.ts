@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+
+import { LoginPage } from '../app/login/login.page';
 
 @Component({
   selector: 'app-root',
@@ -10,24 +11,16 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 })
 export class AppComponent {
 
-paginas : any[] = [
-{titulo: "Home", icone: 'home', url: '/home'},
-{titulo: "List", icone: 'list', url: '/list'},
-{titulo: "Conta", icone: 'cog', url: '/conta'},
-{titulo: "Sair", icone: 'log-out', url: '/login'},
+rootPage : any = LoginPage;  
 
-];  
+constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen){
 
-  constructor(
-    private platform: Platform,
-    private splashScreen: SplashScreen,
-    private statusBar: StatusBar
-  ) { this.initializeApp(); }
-
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
+  platform.ready().then(() => {
+    statusBar.styleDefault();
+    splashScreen.hide();
+  });
   }
 }
+
+  
+

@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'conta', loadChildren: './conta/conta.module#ContaPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'categorias', loadChildren: './categorias/categorias.module#CategoriasPageModule' },
-  { path: 'cadastro', loadChildren: './cadastro/cadastro.module#CadastroPageModule' }
+  { path: 'cadastro', loadChildren: './cadastro/cadastro.module#CadastroPageModule' },
+  { path: 'providers', loadChildren: './providers/providers.module#ProvidersPageModule' }
 ];
 
 @NgModule({

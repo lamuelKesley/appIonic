@@ -3,34 +3,32 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Cadastro
-    </ion-title>
+    <ion-title> Cadastro  </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+	<ion-list>
 
-	<ion-item>
-		<ion-label position="fixed">Nome</ion-label>
-		<ion-input></ion-input>
-	</ion-item>
-	<ion-item>
-		<ion-label position="fixed">Categoria</ion-label>
-		<ion-input></ion-input>
-	</ion-item>
-	<ion-item>
-		<ion-label position="fixed">Descrição</ion-label>
-		<ion-input></ion-input>
-	</ion-item>
-	<ion-item>
-		<ion-label position="fixed">Contato</ion-label>
-		<ion-input></ion-input>
-	</ion-item>
+		<ion-item>
+			<ion-label position="fixed">Nome:</ion-label>		
+		</ion-item>
+
+		<ion-item>
+			<ion-label position="fixed">Categoria:</ion-label>		
+		</ion-item>
+
+		<ion-item>
+			<ion-label position="fixed">Descrição:</ion-label>		
+		</ion-item>
+
+		<ion-item>
+			<ion-label position="fixed">Contato:</ion-label>
+		</ion-item>	
+
+	</ion-list>	
 
 	
-	
-	
-	<ion-button expand="full" (click)="AbrirListadeProdutos()">Cadastrar</ion-button>
+	<ion-button expand="block" (click)="AbrirListadeProdutos()">Cadastrar</ion-button>
 
 </ion-content>
